@@ -22,9 +22,8 @@ def convertToTitle(self, n):
         s=chr(i)+s
     return s
 
-# ### recursion solution
-#     if n > 26:
-#         print n - (n-1)%26 -1
-#         return (convertToTitle(_,((n - 1) // 26)) + convertToTitle(_,n%26))        
-#     else:
-#         return (chr((n-1)%26 + 65))
+#        ### recursion solution
+#        if n > 26:
+#            return (self.convertToTitle((n - 1) // 26) + self.convertToTitle(n%26))        
+#        else:
+#            return (chr((n-1)%26 + 65))   
