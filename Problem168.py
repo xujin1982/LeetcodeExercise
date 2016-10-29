@@ -13,18 +13,18 @@
 
 
 def convertToTitle(self, n):
-        output = []
-        s = ""
-        while n != 0:
-            output.append((n-1)%26 + 65)
-            n = (n - 1) // 26
-        for i in output:
-            s=chr(i)+s
-        return s
-        
-### recursion solution
+    output = []
+    s = ""
+    while n != 0:
+        output.append((n-1)%26 + 65)
+        n = (n - 1) // 26
+    for i in output:
+        s=chr(i)+s
+    return s
+
+# ### recursion solution
 #     if n > 26:
 #         print n - (n-1)%26 -1
-#         return (convertToTitle(_,((n - (n-1)%26) -1) / 26) + convertToTitle(_,n%26))        
+#         return (convertToTitle(_,((n - 1) // 26)) + convertToTitle(_,n%26))        
 #     else:
-#         return (chr((n-1)%26 + 65))        
+#         return (chr((n-1)%26 + 65))
